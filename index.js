@@ -4,7 +4,7 @@ import critical from 'critical'
 export default function CriticalCssWebpackPlugin(options = {}) {
   this.options = Object.assign({
     src: 'index.html',
-    dest: 'index.hmlt',
+    dest: 'index.html',
     inline: true,
     minify: true,
     extract: true,

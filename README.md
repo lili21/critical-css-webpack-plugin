@@ -7,7 +7,7 @@ Installation
 ----
 
 ```bash
-$ yarn add critical-css-webpack-plugin
+$ yarn add critical-css-webpack-plugin --dev
 ```
 
 Usage
@@ -35,7 +35,7 @@ Options
 {
   base: {webpack.output.path},
   src: 'index.html',
-  dest: 'index.hmlt',
+  dest: 'index.html',
   inline: true,
   minify: true,
   extract: true,
