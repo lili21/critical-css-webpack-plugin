@@ -1,7 +1,7 @@
 import path from 'path'
 import critical from 'critical'
 
-export default function CriticalCssWebpackPlugin(options = {}) {
+export default function CriticalCssWebpackPlugin (options = {}) {
   this.options = Object.assign({
     src: 'index.html',
     dest: 'index.html',
@@ -16,14 +16,14 @@ export default function CriticalCssWebpackPlugin(options = {}) {
   }, options)
 }
 
-CriticalCssWebpackPlugin.prototype.apply = function(compiler) {
+CriticalCssWebpackPlugin.prototype.apply = function (compiler) {
   compiler.plugin('after-emit', (compilation, callback) => {
     const base = compilation.outputOptions.path
 
     const css = Object.keys(compilation.assets)
       .filter(filename => /\.css$/.test(filename))
       .map(filename => path.join(base, filename))
-    
-    critical.generate(Object.assign({ base }, this.options), callback)
+
+    critical.generate(Object.assign({ base, css }, this.options), callback)
   })
 }
