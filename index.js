@@ -5,12 +5,13 @@ class CriticalCssWebpackPlugin {
   constructor (options) {
     this.options = Object.assign({
       src: 'index.html',
-      dest: 'index.html',
+      target: 'index.css',
       inline: true,
       minify: true,
       extract: true,
       width: 375,
       height: 565,
+      concurrency: 4,
       penthouse: {
         blockJSRequests: false
       }
