@@ -11,6 +11,10 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lili21/critical-css-webpack-plugin.git"
+  },
   "peerDependencies": {
     "critical": "^2.0.0"
   }
