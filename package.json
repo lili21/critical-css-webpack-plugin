@@ -4,12 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.18.2",
-    "eslint-config-standard": "^11.0.0-beta.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^6.0.0",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint": "^7.31.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "standard-version": "^9.3.1"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,11 @@
   },
   "peerDependencies": {
     "critical": "^2.0.0"
+  },
+  "dependencies": {
+    "critical": "^4.0.1"
+  },
+  "scripts": {
+    "release": "standard-version"
   }
 }

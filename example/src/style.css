@@ -1,0 +1,14 @@
+#root {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  overflow: auto;
+}
+
+.test {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}

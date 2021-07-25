@@ -35,16 +35,12 @@ Options
 {
   base: {webpack.output.path},
   src: 'index.html',
-  target: 'index.css',
+  target: 'index.html',
   inline: true,
-  minify: true,
   extract: true,
   width: 375,
   height: 565,
-  concurrency: 4,
-  penthouse: {
-    blockJSRequests: false
-  }
+  css: [/* all css assets emit by webpack */]
 }
 ```
 
