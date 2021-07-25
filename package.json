@@ -24,5 +24,8 @@
   },
   "scripts": {
     "release": "standard-version"
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }
